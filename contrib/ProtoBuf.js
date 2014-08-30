@@ -141,7 +141,7 @@ ProtoBuf.TYPES = {
 ProtoBuf.Lang = {};
 
 /**
- * @type {!Object.<string,function>}
+ * @type {!Object.<string,Function>}
  */
 ProtoBuf.DotProto = {};
 
@@ -195,7 +195,7 @@ ProtoBuf.DotProto.Parser = function(proto) {};
 ProtoBuf.DotProto.Parser.prototype.tn;
 
 /**
- * @return {{package: string, messages: Array.<Object>, options: Object<string,*>}}
+ * @return {{package: string, messages: Array.<Object>, options: Object}}
  * @throws {Error}
  */
 ProtoBuf.DotProto.Parser.prototype.parse = function() {};
@@ -207,7 +207,7 @@ ProtoBuf.DotProto.Parser.prototype.parse = function() {};
 ProtoBuf.DotProto.Parser.prototype.toString = function() {};
 
 /**
- * @type {Object.<string,function>}
+ * @type {Object.<string,Function>}
  */
 ProtoBuf.Reflect.Reflect = {};
 
@@ -338,7 +338,7 @@ ProtoBuf.Reflect.Message.prototype.decode = function(buffer, length) {};
  * @param {string} type
  * @param {string} name
  * @param {number} id
- * @param {Object.<string.*>=} options
+ * @param {Object=} options
  * @constructor
  * @extends ProtoBuf.Reflect.T
  */
@@ -365,7 +365,7 @@ ProtoBuf.Reflect.Message.prototype.type;
 ProtoBuf.Reflect.Message.prototype.id;
 
 /**
- * @type {!Object.<string,*>}
+ * @type {Object}
  */
 ProtoBuf.Reflect.Message.prototype.options;
 
@@ -414,7 +414,7 @@ ProtoBuf.Reflect.Message.Field.prototype.encodeValue = function(value, buffer) {
 ProtoBuf.Reflect.Enum = function(parent, name) {};
 
 /**
- * @return {Object<string,*>}
+ * @return {Object}
  */
 ProtoBuf.Reflect.Enum.prototype.build = function() {};
 

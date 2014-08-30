@@ -32,24 +32,26 @@ function express() {}
 express.application = function() {};
 
 /**
- * @type {function(new:ExpressRequest, ...[*])}
+ * @type {Object}
  */
-express.request = function() {};
+express.request = {};
 
 /**
- * @type {function(new:ExpressResponse, ...[*])}
+ * @type {Object}
  */
-express.response = function() {};
+express.response = {};
 
 /**
- * @type {function(new:ExpressRoute, ...[*])}
+ * @constructor
+ * @param {...*} args
  */
-express.Route = function() {};
+express.Route = function(args) {};
 
 /**
- * @type {function(new:ExpressRouter, ...[*])}
+ * @constructor
+ * @param {...*} args
  */
-express.Router = function() {};
+express.Router = function(args) {};
 
 /**
  * @type {?function(...[*])}
